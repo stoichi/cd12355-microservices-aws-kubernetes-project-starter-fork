@@ -1,4 +1,4 @@
-FROM python:3.8-slim
+FROM python:3.8
 
 # Update the local package index with the latest packages from the repositories
 RUN apt update -y
