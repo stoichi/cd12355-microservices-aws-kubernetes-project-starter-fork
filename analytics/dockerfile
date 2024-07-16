@@ -13,13 +13,4 @@ COPY . .
 
 RUN pip install -r requirements.txt
 
-# Export the password. 
-ENV POSTGRES_PASSWORD=mypassword
-ENV DB_USERNAME=myuser
-ENV DB_PASSWORD=${POSTGRES_PASSWORD}
-ENV DB_HOST=10.100.242.197
-ENV DB_PORT=5432
-ENV DB_NAME=mydatabase
-
-
 CMD ["python", "app.py"]
